@@ -50,6 +50,7 @@
             <table class="table table-dark table-striped">
                 <thead>
                     <tr>
+                        <th scope="col">Id</th>
                         <th scope="col">Name</th>
                         <th scope="col">Producer</th>
                         <th scope="col">Article</th>
@@ -63,6 +64,7 @@
                         <% products.forEach(item => { %>
                             <form method="post" action="/edit">
                                 <tr>
+                                    <td><%= item._id %></td>
                                     <td><%= item.name %></td>
                                     <td><%= item.producer %></td>
                                     <td><%= item.article %></td>

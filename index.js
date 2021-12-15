@@ -4,7 +4,7 @@ const config = require('config')
 const mongoose = require('mongoose');
 const productsRoutes = require('./routes/products')
 
-const PORT = config.get('port') || 3000
+const PORT = process.env.PORT || config.get('port')
 
 const app = express()
 
