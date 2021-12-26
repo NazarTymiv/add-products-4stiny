@@ -1,4 +1,3 @@
 {
-    "port": 5000,
-    "mongoUrl": "mongodb+srv://admin:hcBTEpyL6DBseLxe@cluster0.ml3kq.mongodb.net/4stiny-products?retryWrites=true&w=majority"
+    "port": 5000
 }

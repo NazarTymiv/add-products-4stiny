@@ -18,7 +18,7 @@ app.use(productsRoutes)
 
 const start = async () => {
     try {
-        await mongoose.connect(config.get('mongoUrl'), {
+        await mongoose.connect(process.env.MONGODB_URI, {
             useNewUrlParser: true
         })
         app.listen(PORT, () => console.log(`Server has been started on ${PORT} port...`))
